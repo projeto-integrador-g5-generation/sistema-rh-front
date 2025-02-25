@@ -1,4 +1,4 @@
-# 🌐 **Gestão PRO - CRUD de Usuários**
+# 🌐 **Gestão PRO**
 
 O **Gestão PRO** é um sistema web desenvolvido para gerenciar usuários de forma intuitiva e eficiente. Com um design responsivo e moderno, ele permite realizar operações de CRUD (Criar, Ler, Atualizar e Deletar) para usuários, além de contar com uma página dedicada para apresentação dos desenvolvedores do projeto.
 
@@ -33,17 +33,16 @@ O **Gestão PRO** é um sistema web desenvolvido para gerenciar usuários de for
 ## 🔧 **Como Executar o Projeto**
 
 1. **Clone este Repositório**:  
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git  
-   cd nome-do-repositorio  
+
+   git clone https://github.com/projeto-integrador-g5-generation/sistema-rh-front.git  
+   cd sistema-rh-front
 
 2. **Instale as Dependências**:  
-   npm install  
-   ou  
+
    yarn install  
 
 3. **Inicie o Servidor de Desenvolvimento**:  
-   npm run dev  
-   ou  
+
    yarn dev  
 
 ---
