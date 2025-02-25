@@ -1,50 +1,78 @@
-# React + TypeScript + Vite
+# 🌐 **Gestão PRO - CRUD de Usuários**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **Gestão PRO** é um sistema web desenvolvido para gerenciar usuários de forma intuitiva e eficiente. Com um design responsivo e moderno, ele permite realizar operações de CRUD (Criar, Ler, Atualizar e Deletar) para usuários, além de contar com uma página dedicada para apresentação dos desenvolvedores do projeto.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 **Funcionalidades**
 
-## Expanding the ESLint configuration
+- **Gerenciamento de Usuários**: Cadastre, edite, visualize e exclua usuários facilmente.
+- **Informações Detalhadas**: Cada usuário possui os seguintes dados:
+  - ID
+  - Nome
+  - Salário
+  - Data de Admissão
+  - Email
+  - Cargo
+- **Interface Responsiva**: Adaptado para diferentes tamanhos de tela.
+- **Exibição com Cards**: Os usuários são listados em um layout moderno e organizado.
+- **Página Sobre**: Apresentação dos integrantes que desenvolveram o projeto.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ **Tecnologias Utilizadas**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React com Vite**: Framework utilizado para desenvolvimento rápido e eficiente.
+- **TypeScript**: Para maior segurança e tipagem no código.
+- **Tailwind CSS**: Estilização moderna e responsiva.
+- **React Router DOM**: Gerenciamento de rotas para navegação dinâmica.
+- **React Toastify**: Notificações para melhor experiência do usuário.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🔧 **Como Executar o Projeto**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone este Repositório**:  
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git  
+   cd nome-do-repositorio  
+
+2. **Instale as Dependências**:  
+   npm install  
+   ou  
+   yarn install  
+
+3. **Inicie o Servidor de Desenvolvimento**:  
+   npm run dev  
+   ou  
+   yarn dev  
+
+---
+
+## 🖥️ **Exemplo de Uso**
+
+1. **Listagem de Usuários**: Acesse a página principal para visualizar os usuários cadastrados.
+2. **Cadastro e Edição**: Utilize os formulários para adicionar ou modificar um usuário.
+3. **Exclusão Segura**: Confirme antes de deletar um usuário do sistema.
+4. **Página Sobre**: Conheça os integrantes que participaram do desenvolvimento do sistema.
+
+---
+
+## ✅ **Melhorias Futuras**
+
+- Implementar autenticação e controle de acesso para usuários administrativos.
+- Adicionar filtros avançados para facilitar a busca por usuários.
+- Criar gráficos analíticos para visualizar estatísticas salariais e de admissões.
+
+---
+
+## 👨‍💻 **Autores**
+
+**Equipe Gestão PRO**  
+
+- [Vinicius Rodrigues](https://github.com/Vinicius-Rodriguess)  
+- [Aline Anacleto](https://github.com/alineanacletoo)  
+- [Wellerson Pinheiros](https://github.com/wellerson-pinheiros)  
+- [Vinicius Ribeiro](https://github.com/viniciusoliveira-27)
+- [Alana Oliveira](https://github.com/alanaoliv)  
+- [Loana Isabelly](https://github.com/loanaisabelly)
+- [Vanessa Ribeiro](https://github.com/vanessaribeiro03)  
