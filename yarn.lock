@@ -432,7 +432,7 @@
 
 "@phosphor-icons/react@^2.1.7":
   version "2.1.7"
-  resolved "https://registry.yarnpkg.com/@phosphor-icons/react/-/react-2.1.7.tgz#b11a4b25849b7e3849970b688d9fe91e5d4fd8d7"
+  resolved "https://registry.npmjs.org/@phosphor-icons/react/-/react-2.1.7.tgz"
   integrity sha512-g2e2eVAn1XG2a+LI09QU3IORLhnFNAFkNbo2iwbX6NOKSLOwvEMmTa7CgOzEbgNWR47z8i8kwjdvYZ5fkGx1mQ==
 
 "@rollup/rollup-android-arm-eabi@4.34.8":
@@ -1522,7 +1522,7 @@ react-refresh@^0.14.2:
 
 react-router-dom@^7.2.0:
   version "7.2.0"
-  resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-7.2.0.tgz"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-7.2.0.tgz#b8a7eae7827cd5207cf91e89807d01217737797d"
   integrity sha512-cU7lTxETGtQRQbafJubvZKHEn5izNABxZhBY0Jlzdv0gqQhCPQt2J8aN5ZPjS6mQOXn5NnirWNh+FpE8TTYN0Q==
   dependencies:
     react-router "7.2.0"
