@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Colaborador from "../../../model/Colaborador";
 
 function CardColaboradores({ colaborador }: { colaborador: Colaborador }) {
@@ -52,7 +53,11 @@ function CardColaboradores({ colaborador }: { colaborador: Colaborador }) {
                 className="bg-blue-600 rounded-2xl p-2 cursor-pointer hover:scale-110 transition-all
                 shadow-md hover:drop-shadow-[2px_2px_4px_#006FFF] px-5"
               >
-                Editar
+                <Link
+                  to={`/editarproduto/Editar/${colaborador.nome}/${colaborador.salario}/${colaborador.cargo}/${colaborador.email}/${colaborador.data_admissao}`}
+                >
+                  Editar
+                </Link>
               </button>
             </div>
           </div>
