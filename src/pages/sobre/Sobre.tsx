@@ -53,17 +53,35 @@ const SobreNos: React.FC = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-6">
-      {membros.map((membro, index) => (
-        <CardMember
-          key={index}
-          foto={membro.foto}
-          nome={membro.nome}
-          linkedin={membro.linkedin}
-          github={membro.github}
-        />
-      ))}
-    </div>
+    <>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-6 bg-gray-200">
+        {membros.map((membro, index) => (
+          <CardMember
+            key={index}
+            foto={membro.foto}
+            nome={membro.nome}
+            linkedin={membro.linkedin}
+            github={membro.github}
+          />
+        ))}
+      </div>
+      <div className="flex justify-center items-center w-full p-4 py-8 flex-col gap-2">
+        <p className="text-1xl text-center max-w-3xl">
+          A equipe do Gestão PRO é formada por desenvolvedores apaixonados por
+          tecnologia e inovação, unidos pelo objetivo de criar uma solução
+          eficiente para a gestão de usuários. Com um olhar voltado para a
+          usabilidade e a experiência do usuário, o time se dedicou ao
+          desenvolvimento de um sistema intuitivo, responsivo e moderno.
+        </p>
+        <p className="text-1xl text-center max-w-3xl">
+          O Gestão PRO é um sistema web desenvolvido para gerenciar usuários de
+          forma intuitiva e eficiente. Com um design responsivo e moderno, ele
+          permite realizar operações de CRUD (Criar, Ler, Atualizar e Deletar)
+          para usuários, além de contar com uma página dedicada para
+          apresentação dos desenvolvedores do projeto.
+        </p>
+      </div>
+    </>
   );
 };
 
