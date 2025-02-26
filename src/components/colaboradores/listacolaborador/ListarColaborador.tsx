@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+import { ChangeEvent, useEffect, useState } from "react";
 import Colaborador from "../../../model/Colaborador";
 import CardColaboradores from "../cardcolaboradores/CardColaboradores";
 
@@ -110,13 +112,48 @@ function ListarColaborador() {
       cargo: "Arquiteto de Software",
       email: "gustavo.martins@email.com",
       foto: "https://randomuser.me/api/portraits/men/12.jpg",
-    }  ];
+    },
+  ];
+
+  const [name, setName] = useState("");
+  const [listacolaborador, setListacolaborador] = useState(colaboradores);
+
+  useEffect(() => {
+    const colaboradoresEncontrados = colaboradores.filter((c: Colaborador) =>
+      c.nome.toLocaleLowerCase().includes(name.toLocaleLowerCase())
+    );
+    setListacolaborador(colaboradoresEncontrados);
+  }, [name]);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4  p-5 pt-10 bg-gradient-to-t from-indigo-900 to-white">
-      {colaboradores.map((colaborador) => (
-        <CardColaboradores key={colaborador.id} colaborador={colaborador} />
-      ))}
+    <div className="bg-gradient-to-t from-indigo-900 to-white">
+      <div className="w-full p-4 flex justify-center items-center">
+        <input
+          className="max-w-3xl w-full px-4 py-4 bg-white rounded-lg h-9 focus:outline-none shadow-lg border-1 border-gray-400"
+          type="search"
+          placeholder="Pesquisar"
+          id="busca"
+          name="busca"
+          onChange={(e: ChangeEvent<HTMLInputElement>) =>
+            setName(e.target.value)
+          }
+          required
+        />
+      </div>
+
+      {listacolaborador.length == 0 ? (
+        <div className="flex justify-center items-center p-4 w-full min-h-[90vh]">
+          <p className="text-3xl text-white text-center">
+            Colaborador não encontrado.
+          </p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4  p-5 pt-10 min-h-[90vh]">
+          {listacolaborador.map((colaborador) => (
+            <CardColaboradores key={colaborador.id} colaborador={colaborador} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

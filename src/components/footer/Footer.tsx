@@ -7,7 +7,7 @@ function Footer() {
     <>
       <div className="flex justify-center bg-indigo-900 text-white">
         <div className="container flex flex-col items-center py-4 gap-2">
-          <p className="text-md font-bold">Gestão PRO | Copyright: {data}</p>
+          <p className="text-md font-bold">Gestão PRO | © {data}</p>
           <p className="text-md text-center">
             Acesse nossa rede social e conheça nossos projetos
           </p>

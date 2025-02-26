@@ -3,7 +3,7 @@ import ListarColaborador from "../../components/colaboradores/listacolaborador/L
 function Home() {
   return (
     <>
-      <div className="bg-indigo-800 flex justify-center">
+      <div className=" flex justify-center bg-gradient-to-r from-indigo-900 to-indigo-800">
         <div className="container grid sm:grid-cols-2 text-white">
           <div className="flex flex-col gap-4 items-center justify-center py-4 w-full">
             <h2 className="text-5xl font-bold text-center">GestãoPRO</h2>
