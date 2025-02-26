@@ -4,6 +4,8 @@ import ListarColaborador from "./components/colaboradores/listacolaborador/Lista
 import Footer from "./components/footer/Footer"
 import Home from './pages/home/Home'
 import Sobre from './pages/sobre/Sobre'
+import DeletarColaborador from './components/colaboradores/deletarcolaborador/DeletarColaborador'
+
 
 
 
@@ -21,6 +23,7 @@ function App() {
             <Route path='/home' element={<Home />} />
             <Route path='/sobre' element={<Sobre />} />
             <Route path="/colaboradores" element={<ListarColaborador />} />
+            <Route path="/deletarcolaborador/:nome" element={<DeletarColaborador />} />
           </Routes>
         </div>
         <Footer />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Colaborador from "../../../model/Colaborador";
 
 function CardColaboradores({ colaborador }: { colaborador: Colaborador }) {
@@ -43,7 +44,7 @@ function CardColaboradores({ colaborador }: { colaborador: Colaborador }) {
                 className="p-2 bg-red-600 rounded-2xl cursor-pointer hover:scale-110 transition-all
                 shadow-md hover:drop-shadow-[2px_2px_4px_#FF6262] px-5"
               >
-                Excluir
+             <Link to={`/deletarcolaborador/${colaborador.nome}`}>Excluir</Link>   
               </button>
             </div>
 
