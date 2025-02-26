@@ -41,7 +41,7 @@ function FormProduto() {
 
       <form className="flex flex-col w-1/2 gap-4" onSubmit={retornar}>
         <div className="flex flex-col gap-2">
-          <label htmlFor="nome">Nome</label>
+          <label >Nome</label>
           <input
             type="text"
             name="nome"
@@ -51,7 +51,7 @@ function FormProduto() {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="salario">Salario</label>
+          <label >Salario</label>
           <input
             type="text"
             name="salario"
@@ -61,7 +61,7 @@ function FormProduto() {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="cargo">Cargo</label>
+          <label >Cargo</label>
           <input
             type="text"
             name="cargo"
@@ -71,7 +71,7 @@ function FormProduto() {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="email">Email</label>
+          <label >Email</label>
           <input
             type="text"
             name="email"
@@ -81,7 +81,7 @@ function FormProduto() {
           />
         </div>
         <div className="flex flex-col gap-2">
-          <label htmlFor="data_admissao">Data de Admissão</label>
+          <label >Data de Admissão</label>
           <input
             type="text"
             name="data_admissao"
